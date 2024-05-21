@@ -36,4 +36,4 @@ dependencies = [
 where = ["", "psychopy_eyetracker_tobii",]
 
 [tool.setuptools.package-data]
-"*" = ["*.yaml", "*png*]
+"*" = ["*.yaml", "*.png*]
