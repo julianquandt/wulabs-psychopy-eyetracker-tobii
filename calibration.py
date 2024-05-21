@@ -12,9 +12,7 @@ from pathlib import Path
 from psychopy import prefs
 from psychopy.tools.monitorunittools import posToPix
 import math
-
-
-this_module_path = Path(__file__).parent
+resources = Path(prefs.paths['resources'])
 
 
 
@@ -61,12 +59,12 @@ class TobiiCalibrationProcedure(BaseCalibrationProcedure):
         #                                     color="red",
         #                                     units='pix', wrapWidth=self.width * 0.9),
 
-        self.facemask['base'] = visual.ImageStim(self.window, image=this_module_path / 'facemask.png', units='pix', pos=(0, 0))
+        self.facemask['base'] = visual.ImageStim(self.window, image=resources / 'facemask.png', units='pix', pos=(0, 0))
         self.facemask_eye_pos_left = [self.facemask['base'].pos[0]-90,self.facemask['base'].pos[1]+27]
         self.facemask_eye_pos_right = [self.facemask['base'].pos[0]+90, self.facemask['base'].pos[1]+27]
 
 
-        self.facemask['live'] = visual.ImageStim(self.window, image=this_module_path / 'facemask.png', units='pix', pos=(0, 0), color = "red")
+        self.facemask['live'] = visual.ImageStim(self.window, image=resources / 'facemask.png', units='pix', pos=(0, 0), color = "red")
 
 
 
