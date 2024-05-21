@@ -1,1 +1,1 @@
-include wulabs_psychopy_eyetracker_tobii/tobii/*.yaml
+include psychopy_eyetracker_tobii/tobii/*.yaml
